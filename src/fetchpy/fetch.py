@@ -43,7 +43,8 @@ def initialize(robot_xml = None, env_path = None, viewer = 'rviz',sim = True, **
 			'built and installed in one of your Catkin workspaces?')
 		raise ValueError('Unable to load or_urdf plugin.')
 
-	urdf_uri = 'package://fetchpy/robot_description/fetch.gazebo.urdf'
+	#urdf_uri = 'package://fetchpy/robot_description/fetch.gazebo.urdf'
+	urdf_uri = 'package://fetch_description/robots/fetch.urdf'
 	srdf_uri = 'package://fetchpy/robot_description/fetch.srdf'
 	args = 'Load {:s} {:s}'.format(urdf_uri, srdf_uri)
 	fetch_name = urdf_module.SendCommand(args)
